@@ -32,7 +32,6 @@ public class ClienteRestController {
     @PostMapping("/asignarServicioEnProceso/{clienteId}/{servicioId}")
     public boolean asignarServicioEnProceso(@PathVariable Long clienteId, @PathVariable  Long servicioId){
         return clienteService.asignarServicio(clienteId,servicioId);
-
     }
 
     @PutMapping
